@@ -1,0 +1,338 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>iWingFeTools</title>
+<link rel="stylesheet" href="./css/public_css.css" />
+</head>
+
+<body>
+<div class="tools_head">
+	<div class="tools_header">
+    	<span class="logo">iWingFeTools</span>
+        <span class="beta">版本：2.0&nbsp;&nbsp;By : Neurotoxin</span>
+        </div>
+    </div>
+</div>
+<div class="basic">
+    
+    <h3 class="basic_h3">弹出框</h3>
+    <!--DEMO开始-->
+    <div class="black_blank"></div><!--黑色半透明蒙板层-->
+    <div class="height_blank">
+    	<a href="javascript:void(0)" class="alarm_button" style=" width:100px; height:30px; background-color:#C00; color:#FFF; text-align: center; line-height:30px; display:block; border-radius:5px;">点击出现弹出框</a>
+    </div><!--无意义的占位div-->
+    <div class="alarm_window">
+    	<div class="alarm_title">提示!</div>
+        <div class="alarm_content">
+        	请注意！此处为弹窗口的内容！<br/>
+            请注意！此处为弹窗口的内容！<br/>
+            请注意！此处为弹窗口的内容！<br/>
+            请注意！此处为弹窗口的内容！
+            <a href="javascript:void(0)" class="close_button">close</a>
+        </div>
+    </div>
+    <!--DEMO结束-->
+    <div class="tishi">调用方法：</div>
+    <div class="daima">
+    	语句：iWing.alarmFun(".alarm_button",".close_button",".alarm_window");<br/>
+        <span class="red">结构：iWing.alarmFun(a_obj,close_button,alarm_obj)；</span><br/>
+        <span class="yellow">参数：a_obj为点击出发弹出框的对象，close_button为点击关闭弹出框的对象，alarm_obj为弹出框对象</span>
+    </div>
+    <div class="line"></div>
+    
+    <h3 class="basic_h3">回到顶部按钮</h3>
+    <!--DEMO开始-->
+    <div class="box">此为scroll过此div时将此div固定的盒子</div>
+    <!--DEMO结束-->
+    <div class="tishi">调用方法：</div>
+    <div class="daima">
+    	语句：iWing.shop_fixed(".box","gg");<br/>
+        <span class="red">结构iWing.shop_fixed(obj,fixed_class);</span><br/>
+        <span class="yellow">参数：obj为要固定的div，fixed_class为添加固定样式的class
+        </span>
+    </div>
+    <div class="line"></div>
+    
+    <h3 class="basic_h3">文字纵向循环滚动</h3>
+    <!--DEMO开始-->
+    <div class="text_scroll_loop">
+    	<ul>
+        	<li><a href="#">习近平批准整治军队地产，纠治6类突出问题</a></li>
+            <li><a href="#">中国近期将完成在南沙岛礁上陆域吹填工程建设</a></li>
+            <li><a href="#">网络小说冲击荧屏，以影视创新之名收割粉丝</a></li>
+            <li><a href="#">红色通缉令嫌犯在加开农场，否认出逃事实</a></li>
+        </ul>
+    </div>
+    <!--DEMO结束-->
+    <div class="tishi">调用方法：</div>
+    <div class="daima">
+    	语句：iWing.textScrollLoop(".text_scroll_loop",500,3000);<br/>
+        <span class="red">结构：iWing.textScrollLoop(obj,delayTime,interTime)；</span><br/>
+        <span class="yellow">参数：obj为滚动窗对象,delayTime为动画执行速度,interTime为动画执行间隔时间</span>
+    </div>
+    <div class="line"></div>
+    
+    <h3 class="basic_h3">幻灯片式切换</h3>
+    <!--DEMO开始-->
+    <div class="photo_banner">
+        <div class="img_area">
+            <div class="btn">
+                <div class="btn_left"></div>
+                <div class="btn_right"></div>
+                <div class="clear"></div>
+            </div>
+            <img src="images/01.jpg" />
+        </div>
+        <div class="ctrl_area">
+            <ul>
+                <li><img src="images/01.jpg" /></li>
+                <li><img src="images/02.jpg" /></li>
+                <li><img src="images/03.jpg" /></li>
+                <li><img src="images/04.jpg" /></li>
+                <li><img src="images/05.jpg" /></li>
+                <li><img src="images/01.jpg" /></li>
+                <li><img src="images/02.jpg" /></li>
+                <li><img src="images/03.jpg" /></li>
+                <li><img src="images/04.jpg" /></li>
+                <li><img src="images/05.jpg" /></li>
+                <li><img src="images/01.jpg" /></li>
+                <li><img src="images/02.jpg" /></li>
+                <li><img src="images/03.jpg" /></li>
+                <li><img src="images/04.jpg" /></li>
+                <li><img src="images/05.jpg" /></li>
+            </ul>
+        </div>
+    </div>
+    <!--DEMO结束-->
+    <div class="tishi">调用方法：</div>
+    <div class="daima">
+    	语句：iWing.slide_banner(".photo_banner",500,3,5,105);<br/>
+        <span class="red">结构：iWing.slide_banner(obj,delayTime,tab_num,show_num,li_allwidth)；</span><br/>
+        <span class="yellow">参数：obj为外层包裹对象,delayTime为动画执行速度,tab_num为超过第几个执行滚动的数字，show_num是选项卡可见个数，li_allwidth为单个选项卡的width,padding,margin值的和<br/>
+        备注：在主显示大图上有左右点击两个区域，可自定义
+        </span>
+    </div>
+    <div class="line"></div>
+    
+    <h3 class="basic_h3">回到顶部按钮</h3>
+    <!--DEMO开始-->
+    <div class="back_top"></div>
+    <!--DEMO结束-->
+    <div class="tishi">调用方法：</div>
+    <div class="daima">
+    	语句：iWing.back_top(".back_top");<br/>
+        <span class="red">结构：iWing.back_top(obj)</span><br/>
+        <span class="yellow">参数：obj为回到顶部按钮
+        </span>
+    </div>
+    <div class="line"></div>
+    
+    <h3 class="basic_h3">表单验证</h3>
+    <!--DEMO开始-->
+    <div class="biao_div">用户名：<input type="text" class="form_text" id="username" /><span class="biao_tishi"></span></div> 
+    <div class="biao_div">邮箱：<input type="text" class="form_text" id="e_mail" /><span class="biao_tishi"></span></div> 
+    <div class="biao_div">手机号：<input type="text" class="form_text" id="mobile_number" /><span class="biao_tishi"></span></div>
+    <div class="biao_div">输入密码：<input type="text" class="form_text" id="password" /><span class="biao_tishi"></span></div>
+    <div class="biao_div">重复密码：<input type="text"class="form_text" id="repeat_password"  /><span class="biao_tishi"></span></div>
+    <a href="javascript:void(0)" class="submit_form">验证</a>
+    <!--DEMO结束-->  
+    <div class="tishi">调用方法：</div>
+    <div class="daima">
+    	语句：<br/>
+        iWing.userName_test("#username"); <span class="green">验证用户名</span><br/>
+        iWing.e_mail_test("#e_mail"); <span class="green">验证邮箱</span><br/>
+        iWing.mobile_number_test("#mobile_number"); <span class="green">验证手机号</span><br/>
+        iWing.password_test("#password"); <span class="green">验证密码</span><br/>
+        iWing.password_twice_test("#password","#repeat_password"); <span class="green">验证第二次输入密码</span><br/>
+        <span class="red">
+        结构：<br/>
+        iWing.userName_test(obj);<br/>
+        iWing.e_mail_test(obj);<br/>
+        iWing.mobile_number_test(obj);<br/>
+        iWing.password_test(obj);<br/>
+        iWing.password_twice_test(obj,obj_before);<br/>
+        </span><br/>
+        <span class="yellow">参数：obj为要验证表单的id，before为第一次输入密码的id。
+        </span>
+    </div>
+    <div class="line"></div>
+    
+    <h3 class="basic_h3">判断是否为PC</h3>
+    <!--DEMO开始-->
+    <div class="isPC_div"></div>
+    <!--DEMO结束-->
+    <div class="tishi">调用方法：</div>
+    <div class="daima">
+    	语句：iWing.IsPC();<br/>
+        <span class="red">结构：iWing.IsPC();</span><br/>
+        <span class="yellow">无参数，直接调用即可,返回值为true为PC，返回值为false不是PC。
+        </span>
+    </div>
+    <div class="line"></div>
+    
+    <h3 class="basic_h3">写入、读取cookie</h3>
+    <!--DEMO开始-->
+	<input type="button" class="cookie_write" value="write cookie" />
+	<input type="button" class="cookie_get" value="get cookie" />
+    <!--DEMO结束-->
+    <div class="tishi">调用方法：</div>
+    <div class="daima">
+    	语句：<br/>
+        iWing.writeCookie(name,value);<br/>
+        iWing.readCookie(name);<br/>
+        <span class="red">结构：<br/>iWing.writeCookie(name,value);<br/>iWing.readCookie(name);</span><br/>
+        <span class="yellow">name为要写入的cookie名，value为要写入的cookie值。获取cookie，name为要获取的cookie的名，直接调用即可，执行函数后会返回一个值，为获取cookie到的名为name的cookie的值。
+        </span>
+    </div>
+    <div class="line"></div>
+    
+    <h3 class="basic_h3">侧栏跟随滚动窗口</h3>
+    <!--DEMO开始-->
+        <div class="window_nav"><!--左侧浮动窗口-->
+            <div class="wind_content">
+                <ul>
+                    <li>
+                        <a href="#">党办</a>
+                        <a href="#">纪检</a>
+                        <a href="#">调节</a>
+                    </li>
+                    <li>
+                        <a href="#">治安</a>
+                        <a href="#">调节</a>
+                        <a href="#">历史</a>
+                    </li>
+                    <li>
+                        <a href="#">沿革</a>
+                        <a href="#">环境</a>
+                        <a href="#">工业</a>
+                    </li>
+                    <li>
+                        <a href="#">沿革</a>
+                        <a href="#">环境</a>
+                        <a href="#">工业</a>
+                    </li>
+                    <li>
+                        <a href="#">党办</a>
+                        <a href="#">纪检</a>
+                        <a href="#">调节</a>
+                    </li>
+                    <li>
+                        <a href="#">治安</a>
+                        <a href="#">调节</a>
+                        <a href="#">历史</a>
+                    </li>
+                    <li>
+                        <a href="#">沿革</a>
+                        <a href="#">环境</a>
+                        <a href="#">工业</a>
+                    </li>
+                    <li>
+                        <a href="#">沿革</a>
+                        <a href="#">环境</a>
+                        <a href="#">工业</a>
+                    </li>
+                    <li>
+                        <a href="#">党办</a>
+                        <a href="#">纪检</a>
+                        <a href="#">调节</a>
+                    </li>
+                    <li>
+                        <a href="#">治安</a>
+                        <a href="#">调节</a>
+                        <a href="#">历史</a>
+                    </li>
+                    <li>
+                        <a href="#">沿革</a>
+                        <a href="#">环境</a>
+                        <a href="#">工业</a>
+                    </li>
+                    <li>
+                        <a href="#">沿革</a>
+                        <a href="#">环境</a>
+                        <a href="#">工业</a>
+                    </li>
+                    <li>
+                        <a href="#">党办</a>
+                        <a href="#">纪检</a>
+                        <a href="#">调节</a>
+                    </li>
+                    <li>
+                        <a href="#">治安</a>
+                        <a href="#">调节</a>
+                        <a href="#">历史</a>
+                    </li>
+                    <li>
+                        <a href="#">沿革</a>
+                        <a href="#">环境</a>
+                        <a href="#">工业</a>
+                    </li>
+                    <li>
+                        <a href="#">沿革</a>
+                        <a href="#">环境</a>
+                        <a href="#">工业</a>
+                    </li>
+                    <li class="last">
+                        <a href="#">沿革</a>
+                        <a href="#">环境</a>
+                        <a href="#">工业</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    <!--DEMO结束-->
+
+    <div class="tishi">调用方法：</div>
+    <div class="daima">
+        语句：<br/>
+        iWing.shop_fixed(".window_nav2","fixed");<br/>
+        <span class="red">结构：<br/>iWing.shop_fixed(obj,fixed_class);<br/>
+        <span class="yellow">
+            obj为滚动窗口，fixed_class为fixed时的class。由于本效果有很多需要自己手动微调的地方，故不提供参数定义，请自己在css和js中进行修改，请参考注释。
+        </span>
+    </div>
+    <div class="line"></div>
+
+</div>
+
+<div class="foot">
+    这是占位置的底部区域
+</div>
+
+<script type="text/javascript" src="./js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="./js/iWingFeTools-2.0.js"></script>
+<script type="text/javascript">
+    /*调用区域*/
+    iWing.alarmFun(".alarm_button",".close_button",".alarm_window");    /*调用弹出框*/
+    iWing.textScrollLoop(".text_scroll_loop",500,3000);/*调用文字纵向循环滚*/
+    iWing.slide_banner(".photo_banner",500,3,5,105);/*调用幻灯片切换*/
+    iWing.back_top(".back_top");/*调用回到顶部按钮*/
+    iWing.shop_fixed(".box","gg");/*滚动固定*/
+    $(".submit_form").click(function(){/*调用表单验证*/
+        var user_Name = iWing.userName_test("#username");
+        var e_Mail = iWing.e_mail_test("#e_mail");
+        var mobile_test = iWing.mobile_number_test("#mobile_number");
+        var password_t = iWing.password_test("#password");
+        var password_twice = iWing.password_twice_test("#password","#repeat_password");
+        if(user_Name && e_Mail && mobile_test && password_t && password_twice){
+            alert("恭喜您注册成功！");
+            }
+        })
+    var ispc = iWing.IsPC(); /*判断是否为PC电脑*/
+    if(ispc){   
+        $(".isPC_div").text("本机为PC电脑");
+        }else{
+            $(".isPC_div").text("本机不是PC电脑");
+            }
+    $(".cookie_write").click(function(){/*写入cookie*/
+        iWing.writeCookie("first_name","我的第二个cookie");
+        })
+    $(".cookie_get").click(function(){/*读取cookie*/
+        var readValue = iWing.readCookie("first_name");
+        alert(readValue);
+        })   
+    iWing.scrollFixed(".window_nav","fixed");/*侧栏固定滚动*/                   
+    /*调用区域结束*/    
+</script>
+</body>
+</html>

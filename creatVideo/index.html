@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+</head>
+<body>
+    <a href="javascript:;" class="alertVideo">弹出播放视频</a>
+    <h3>How to use</h3>
+    <p>1、将images文件夹中的2张图片复制到你的图片文件夹中，将jwplayer.js、creatVideo.js、player.swf拷贝到你的js文件夹中，如果已有jquery，就不需要再使用本demo中的jquery了</p>
+    <p>2、在页面中按照顺序引入jquery、creatVideo</p>
+    <p>3、创建一个script标签，声明全局变量videoUrl并且将视频url赋值给这个变量</p>
+    <p>4、给你希望绑定点击弹窗播放的dom对象添加class="alertVideo"</p>
+    <p>5、弹出层html、css、播放器全部由js动态创建，如需修改样式，或播放器大小，请到creatVideo.js中直接修改属性即可。</p>
+    <p>6、本插件使用的播放器为jwplayer.js，如果需要使用更多播放器参数或回调函数，请<a href="http://blog.csdn.net/tomysea/article/details/6685553">参考手册</a></p>
+    <p>注意：必须搭建在服务器环境下才可以播放视频！</p>
+
+    <script type="text/javascript">
+        var videoUrl = "video.mp4"
+    </script>
+    <script src="js/jquery.js" type="text/javascript"></script>
+    <script src="js/jwplayer.js" type="text/javascript"></script>
+    <script src="js/creatVideo.js" type="text/javascript"></script>
+</body>
+</html>

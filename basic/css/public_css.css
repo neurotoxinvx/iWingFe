@@ -1,0 +1,84 @@
+@charset "utf-8";
+/* CSS Document */
+*{ padding:0; margin:0;}
+body{ font-family:"微软雅黑"; font-size:12px; color:#666;}
+ul{ list-style:none;}
+a{ text-decoration:none;}
+.clear{ clear:both;}
+.tools_head{ width:100%; height:45px; line-height:45px; background-color:#0b83ba;}
+.tools_header{ width:955px; height:45px; line-height:45px; margin:0 auto;background-color:#0b83ba;}
+.logo{ font-size:18px; color:#FFF; font-weight:700; text-shadow:5px 3px 5px #666; float:left;}
+.beta{ float:right; color:#FFF; font-size:12px;text-shadow:5px 3px 5px #666; cursor:pointer;transition: all 1s;}
+.beta:hover{ color:#F60; }
+.basic{ width:955px; padding:30px 0; margin:0 auto;}
+.basic .basic_h3{ font-size:17px; font-weight:700; color:#06C; margin-bottom:20px;}
+.tishi{ font-size:14px; color:#000; font-weight:700; margin:10px 0;}
+.daima{ width:480px; padding:10px; line-height:25px; background-color:#1d1f21; color:#c5c8c6;}
+.red{ color:#C00;}
+.yellow{ color:#F90;}
+.green{ color:#0C0;}
+.line{ border-bottom:3px dotted #999; margin:30px 0;}
+.foot{ height: 400px; text-align: center; font-size: 25px; line-height: 400px;}
+/*以上为公用样式*/
+
+/*弹出框样式开始*/
+.black_blank{ width:100%; background-color:#000; opacity:0.7; filter:alpha(opacity=70); position:fixed; left:0; top:0; z-index:990; display:none;}
+.height_blank{ height:100px;}
+.alarm_window{ z-index:1000; position:fixed; margin-left:50%; left:-179px; top:200px; background-color:#FFF; width:358px; height:158px;  border-radius:5px; overflow:hidden; display:none;}
+.alarm_title{ width:348px; padding-left:10px; height:30px; background-color:#C00; line-height:30px; color:#FFF;}
+.alarm_content{ width:338px; height:108px; padding:10px;}
+.close_button{ width:80px; height:30px; margin:5px auto; display:block; background-color:#C00; color:#FFF; text-align: center; line-height:30px; border-radius:5px;}
+/*弹出框样式结束*/
+
+/*文字纵向循环滚动样式开始*/
+.text_scroll_loop{ width:500px; height:30px; overflow:hidden; position:relative;}
+.text_scroll_loop ul{ position:absolute; top:0; left:0;}
+.text_scroll_loop ul li{ width:500px; height:30px; line-height:30px;}
+/*文字纵向循环滚动样式结束*/
+
+/*幻灯片式切换样式开始*/
+.photo_banner{ width:520px; height:360px; padding:10px; border:2px solid #CCC; margin:20px auto;}
+.img_area{ width:520px; height:280px; margin-bottom:20px; position:relative;}
+.btn{ width:520px; height:280px; position:absolute; left:0; top:0;}
+.btn .btn_left{ width:260px; height:280px; float:left; cursor:pointer;}
+.btn .btn_right{ width:260px; height:280px; float:left; cursor:pointer;}
+.img_area img{ width:520px; height:280px;}
+.ctrl_area{ width:520px; height:54px; overflow:hidden; position:relative;}
+.ctrl_area ul{ width:2000px; height:54px; position:absolute;}
+.ctrl_area ul li{ width:100px; height:54px;  float:left; margin-right:5px; cursor:pointer;}
+.ctrl_area ul li.on{ opacity:0.5;}
+.ctrl_area ul li img{ width:100px; height:54px;}
+/*幻灯片式切换样式结束*/
+
+/*回到顶部按钮样式开始*/
+.back_top{ width:71px; height:36px; background:url(images/elephant.png) no-repeat; display:none; position:fixed; bottom:0px; left:-18px; margin-left:50%; z-index:1000; cursor:pointer;}
+.back_top:hover{ background:url(images/elephant.png) no-repeat -72px 0px;}
+/*回到顶部按钮样式结束*/
+
+/*滚动固定样式开始*/
+.box{ width:955px; height:30px; text-align:center; line-height:30px; background-color:#FFF; border:2px solid #06F; z-index:99;}
+.box.gg{ position:fixed; top:0;}
+/*滚动固定样式结束*/
+
+/*表单验证样式开始*/
+.biao_div{ height:30px; line-height:30px; margin:10px 0;}
+.biao_tishi{ margin-left:10px; height:30px; line-height:30px; font-size:14px; color:#F00;}
+.form_text{ width:150px; height:20px; text-indent:5px;}
+.submit_form{ width:50px; height:25px; background-color:#CCC; color:#FFF; display:block; line-height:25px; text-align: center;}
+/*表单验证样式结束*/
+
+/*判断是否为电脑样式开始*/
+.isPC_div{ width:100px; height:25px; border:1px solid #000; text-align: center; line-height:25px; color:#F00;}
+/*判断是否为电脑样式结束*/
+
+/*侧栏固定滚动菜单样式开始*/
+.window_nav{ width:140px; height:609px; background-color:#FFF; border:1px solid #06F; position:absolute; top:80px; left:33px; z-index:99;/*固定的视窗*/}
+.window_nav.fixed{ position:fixed; top:28px; margin-left:50%; left:-680px; /*fixed时的位置*/}
+.window_nav.posi{ position:absolute; margin-left:0; left:33px; /*到底部时添加的class，固定的位置在js中修改*/}
+/*下方的样式不一定需要，请根据自己需求添加*/
+.wind_content{ width:126px; height:582px; padding:0 7px;}
+.wind_content ul li{ width:126px; height:33px; line-height:33px; border-bottom:1px solid #e9e9e9;}
+.wind_content ul li.last{ border-bottom:none;}
+.wind_content ul li a{ color:#363636; margin:0 5px; font-size:14px;}
+.wind_content ul li a:hover{ color:#c22549;}
+/*侧栏固定滚动菜单样式结束*/
